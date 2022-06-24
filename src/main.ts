@@ -35,7 +35,7 @@ app.get("/", async function (req, res) {
         const service = google.drive({ version: 'v2', auth: oauthClient });
 
         const request = {
-            name: NEW_PRESENTATION_TITLE
+            title: NEW_PRESENTATION_TITLE
         };
 
         try {
